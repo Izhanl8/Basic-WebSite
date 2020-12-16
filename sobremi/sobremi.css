@@ -1,0 +1,290 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  background-color: black;
+  background-image: url("https://image.slidesharecdn.com/coleresdifuminados-120306204028-phpapp01/95/coleres-difuminados-1-728.jpg?cb=1331066493");
+  background-attachment: fixed;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  margin-top: 330px;
+  transition: padding-top 0.5 ease;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  background-color: #24303c;
+  text-emphasis: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  transition: all 0.5 ease;
+}
+
+header h1 {
+  font-size: 42px;
+  color: white;
+  line-height: 230px;
+  font-weight: 300;
+  transition: all 0.3 ease;
+  text-align: center;
+}
+
+header h1 i {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: black;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+header nav a:hover {
+  background: rgb(128, 139, 150);
+}
+
+h2 {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 2;
+  color: white;
+}
+
+.bigcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+section {
+  margin: 10px;
+  padding: 20px;
+  background: #24303c;
+  border-radius: 30px;
+}
+section a {
+  text-decoration: none;
+  color: white;
+}
+
+/* JavaScript */
+body.sticky-header {
+  padding-top: 100px;
+}
+body.sticky-header header {
+  height: 60px;
+  background: black;
+}
+body.sticky-header header h1 {
+  transform: scale(0, 0);
+}
+
+/* ul li */
+ul li {
+  margin: 10px;
+}
+
+/* Boton arriba */
+.ir-arriba{
+  display: none;
+  padding: 20px;
+  background: #24303c;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 30px;
+  width:3%;
+
+}
+
+
+.skills{
+  width:6%;
+  flota:center;
+}
+
+/* Jquery */
+@media (max-width: 500px) {
+  .imglogos {
+    width: 5%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .ir-arriba {
+    display: none;
+    padding: 20px;
+    background: grey;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width:14%;
+  } h2 {
+    text-align:center;
+  }
+}
+
+
+
+/* borra de skils */
+.wrapper{
+  width: 400px;
+
+margin:0 auto;
+}
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+overflow-x:hidden;
+
+}
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+.skill:before{
+  width: 100%;
+  height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #959595;
+  bottom: 0;
+}
+.skill-bar {
+  width: 100%;
+  height: 5px;
+  background: white;
+  display: block;
+  position: relative;
+}
+
+/* SKILL 1 */
+.skill1{
+  width: 90%;
+
+}
+.skill-bar span{
+  position: absolute;
+  border-top: 5px solid white;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+.skill-bar {
+  position: relative;
+
+}
+
+.skill1 .skill-count1 {
+  right: 0;
+}
+/* SKILL 2 */
+.skill2{
+  width: 85%;
+}
+
+.skill2 .skill-count2 {
+  right: 0;
+}
+/* SKILL 3 */
+.skill3{
+  width: 75%;
+}
+.skill3 .skill-count3 {
+  right: 0;
+}
+
+/* SKILL 4 */
+.skill4{
+  width: 25%
+}
+
+.skill4 .skill-count4 {
+  right: 0;
+}
+
+/* SKILL 5 */
+.skill5{
+  width: 50%;
+}
+
+.skill5 .skill-count5 {
+  right: 0;
+}
+
+/* SKILL 6 */
+.skill6{
+  width: 75%
+}
+
+.skill6 .skill-count6 {
+  right: 0;
+}
+
+/* Responsive de barras de skills */
+@media (max-width: 800px){
+  .skill:before{
+    width: 50%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+  }
+}
+@media (max-width: 500px){
+  .skill:before{
+    width: 50%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+  }
+}
